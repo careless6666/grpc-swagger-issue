@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>false</ImplicitUsings>
+        <LangVersion>default</LangVersion>
+        <RootNamespace>WebApplication</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+<!--        <Protobuf Include="**/*.proto" GrpcServices="Server" ProtoRoot="api/Proto" />-->
+        <Protobuf Include="api\Proto\greet.proto" GrpcServices="Server" Link="Proto\greet.proto" ProtoRoot="api\Proto" />
+
+        <PackageReference Include="Grpc.Tools" Version="2.29.0" />
+        
+        <PackageReference Include="Grpc.AspNetCore.Server" Version="2.29.0" />
+        <PackageReference Include="Google.Protobuf" Version="3.13.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Grpc.HttpApi" Version="0.1.0-alpha.20305.2" />
+        <PackageReference Include="Microsoft.AspNetCore.Grpc.Swagger" Version="0.1.0-alpha.20305.2" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,7 @@
+version: v1
+plugins:
+  - name: csharp
+    out: gen/proto/csharp
+  #- name: grpc_csharp_plugin
+  - remote: buf.build/grpc/plugins/csharp:v1.41.1-1
+    out: gen/proto/csharp
