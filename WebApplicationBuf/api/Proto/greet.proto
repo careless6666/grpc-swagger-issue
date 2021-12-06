@@ -4,6 +4,7 @@
 syntax = "proto3";
 
 import "google/api/annotations.proto";
+import "protoc-gen-swagger/options/annotations.proto";
 
 package greet;
 

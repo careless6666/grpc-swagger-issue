@@ -18,6 +18,7 @@
     <ItemGroup>
       <Folder Include="gen\proto" />
       <Folder Include="vendor.pb" />
+      <Folder Include="vendor.pb\github.com\grpc-ecosystem" />
     </ItemGroup>
 
 </Project>

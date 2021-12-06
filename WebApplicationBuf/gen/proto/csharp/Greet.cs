@@ -25,16 +25,17 @@ namespace Greet {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "ChFQcm90by9ncmVldC5wcm90bxIFZ3JlZXQaHGdvb2dsZS9hcGkvYW5ub3Rh",
-            "dGlvbnMucHJvdG8iIgoMSGVsbG9SZXF1ZXN0EhIKBG5hbWUYASABKAlSBG5h",
-            "bWUiOgoQSGVsbG9SZXF1ZXN0RnJvbRISCgRuYW1lGAEgASgJUgRuYW1lEhIK",
-            "BGZyb20YAiABKAlSBGZyb20iJgoKSGVsbG9SZXBseRIYCgdtZXNzYWdlGAEg",
-            "ASgJUgdtZXNzYWdlMq0BCgdHcmVldGVyEk4KCFNheUhlbGxvEhMuZ3JlZXQu",
-            "SGVsbG9SZXF1ZXN0GhEuZ3JlZXQuSGVsbG9SZXBseSIagtPkkwIUEhIvdjEv",
-            "Z3JlZXRlci97bmFtZX0SUgoMU2F5SGVsbG9Gcm9tEhcuZ3JlZXQuSGVsbG9S",
-            "ZXF1ZXN0RnJvbRoRLmdyZWV0LkhlbGxvUmVwbHkiFoLT5JMCECILL3YxL2dy",
-            "ZWV0ZXI6ASpiBnByb3RvMw=="));
+            "dGlvbnMucHJvdG8aLHByb3RvYy1nZW4tc3dhZ2dlci9vcHRpb25zL2Fubm90",
+            "YXRpb25zLnByb3RvIiIKDEhlbGxvUmVxdWVzdBISCgRuYW1lGAEgASgJUgRu",
+            "YW1lIjoKEEhlbGxvUmVxdWVzdEZyb20SEgoEbmFtZRgBIAEoCVIEbmFtZRIS",
+            "CgRmcm9tGAIgASgJUgRmcm9tIiYKCkhlbGxvUmVwbHkSGAoHbWVzc2FnZRgB",
+            "IAEoCVIHbWVzc2FnZTKtAQoHR3JlZXRlchJOCghTYXlIZWxsbxITLmdyZWV0",
+            "LkhlbGxvUmVxdWVzdBoRLmdyZWV0LkhlbGxvUmVwbHkiGoLT5JMCFBISL3Yx",
+            "L2dyZWV0ZXIve25hbWV9ElIKDFNheUhlbGxvRnJvbRIXLmdyZWV0LkhlbGxv",
+            "UmVxdWVzdEZyb20aES5ncmVldC5IZWxsb1JlcGx5IhaC0+STAhAiCy92MS9n",
+            "cmVldGVyOgEqYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
-          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, },
+          new pbr::FileDescriptor[] { global::Google.Api.AnnotationsReflection.Descriptor, global::Grpc.Gateway.ProtocGenSwagger.Options.AnnotationsReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Greet.HelloRequest), global::Greet.HelloRequest.Parser, new[]{ "Name" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Greet.HelloRequestFrom), global::Greet.HelloRequestFrom.Parser, new[]{ "Name", "From" }, null, null, null, null),
