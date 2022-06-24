@@ -1,5 +1,0 @@
-version: v1
-deps:
-  - github.com/googleapis/googleapis/google/api/annotations.proto common-protos-1_3_1
-  - github.com/grpc-ecosystem/grpc-gateway/protoc-gen-swagger v1.16.0
-  - github.com/googleapis/googleapis/google/api/http.proto common-protos-1_3_1
