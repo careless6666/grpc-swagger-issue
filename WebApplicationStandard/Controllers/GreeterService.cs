@@ -16,14 +16,14 @@ namespace WebApplication.Controllers
 
         public override Task<HelloReply> SayHello(HelloRequest request, ServerCallContext context)
         {
-            _logger.LogInformation($"Sending hello to {request.Name}");
-            return Task.FromResult(new HelloReply { Message = $"Hello {request.Name}" });
+            _logger.LogInformation($"Sending hello to {request.NamePeka}");
+            return Task.FromResult(new HelloReply { MessageNo = $"Hello {request.NamePeka}" });
         }
 
         public override Task<HelloReply> SayHelloFrom(HelloRequestFrom request, ServerCallContext context)
         {
-            _logger.LogInformation($"Sending hello to {request.Name} from {request.From}");
-            return Task.FromResult(new HelloReply { Message = $"Hello {request.Name} from {request.From}" });
+            _logger.LogInformation($"Sending hello to {request.NameAt} from {request.FromTest}");
+            return Task.FromResult(new HelloReply { MessageNo = $"Hello {request.NameAt} from {request.FromTest}" });
         }
     }
 }
