@@ -10,7 +10,7 @@ package greet;
 service Greeter {
   rpc SayHello (HelloRequest) returns (HelloReply) {
     option (google.api.http) = {
-      get: "/v1/greeter/{name}"
+      get: "/v1/greeter"
     };
   }
   rpc SayHelloFrom (HelloRequestFrom) returns (HelloReply) {
@@ -23,6 +23,7 @@ service Greeter {
 
 message HelloRequest {
   string name = 1;
+  string test = 2;
 }
 
 message HelloRequestFrom {
